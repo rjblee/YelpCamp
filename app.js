@@ -6,7 +6,7 @@ app.set("view engine", "ejs");
 
 app.get("/", function(req, res){
   res.render("landing");
-})
+});
 
 app.get("/campgrounds", function(req, res){
   var campgrounds = [
@@ -16,8 +16,8 @@ app.get("/campgrounds", function(req, res){
   ]
 
   res.render("campgrounds", {campgrounds: campgrounds});
-})
+});
 
 app.listen(3000, function(){
   console.log("YelpCamp server has started!");
-})
+});
